@@ -24,11 +24,11 @@ Background and more information on creating fields can be found at [Litium docs 
 1. Copy the files from \src to the following paths in your Litium Accelerator solution 
 ```
 \src\Litium.Accelerator\FieldFramework\ReadonlyText.cs
-\src\Accelerator\components\field-editor-readonly-text\field-editor-readonly-text.component.html
-\src\Accelerator\components\field-editor-readonly-text\field-editor-readonly-text.component.ts
+\src\Litium.Accelerator.FieldTypes\src\Accelerator\components\field-editor-readonly-text\field-editor-readonly-text.component.html
+\src\Litium.Accelerator.FieldTypes\src\Accelerator\components\field-editor-readonly-text\field-editor-readonly-text.component.ts
 ```
-1. To register the component edit the file `src\Accelerator\components\index.ts` and add the line: `export { FieldEditorReadonlyText } from './field-editor-readonly-text/field-editor-readonly-text.component';`
-1. Modify `src\Accelerator\extensions.ts` and add _FieldEditorReadonlyText_ to `import { FieldEditorReadonlyText, ... } from './components';` and to `declarations: [ FieldEditorReadonlyText, ... ]`
+1. To register the component edit the file `src\Litium.Accelerator.FieldTypes\src\Accelerator\components\index.ts` and add the line: `export { FieldEditorReadonlyText } from './field-editor-readonly-text/field-editor-readonly-text.component';`
+1. Modify `src\Litium.Accelerator.FieldTypes\src\Accelerator\extensions.ts` and add _FieldEditorReadonlyText_ to `import { FieldEditorReadonlyText, ... } from './components';` and to `declarations: [ FieldEditorReadonlyText, ... ]`
 1. Build the typescript following [instructions on Litium docs site](https://docs.litium.com/documentation/architecture/field-framework/creating-a-custom-field-type), run the following commands from a command prompt in directory _src\Litium.Accelerator.FieldTypes_
     1. `npm install` 
     1. `npm run build`
